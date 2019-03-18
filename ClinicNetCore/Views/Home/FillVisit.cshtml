@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filling history of patient</title>
+</head>
+<body>
+    <div>
+        <h3>Patient visits history form</h3>
+        <p>Please fill the following fields</p>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.PatientId" name="PatientId" />
+            <table>
+                <tr>
+                    <td>Specify specialist</td>
+                    <td><input type="text" name="Specialist" /> </td>
+                </tr>
+                <tr>
+                    <td>Specify compliants</td>
+                    <td><input type="text" name="Complaints" /> </td>
+                </tr>
+                <tr>
+                    <td>Specify diagnosis</td>
+                    <td><input type="text" name="Diagnosis" /> </td>
+                </tr>
+                <tr>
+                    <td>Visited at</td>
+                    <td><input type="text" name="VisitedAt" /></td>
+                </tr>
+
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
